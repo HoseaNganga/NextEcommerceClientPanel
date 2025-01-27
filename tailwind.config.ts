@@ -12,6 +12,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        sm: "320px", //small screens(mobile devices)
+        md: "768px", //medium screens(tablet devices)
+        lg: "1024px", //large screens(laptop devices)
+        xl: "1280px", //extra large screens(desktop devices)
+        "2xl": "1536px", //extra extra large screens(desktop devices)
+      },
     },
   },
   plugins: [],
