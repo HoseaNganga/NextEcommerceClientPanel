@@ -40,7 +40,7 @@ type InputProps = React.HTMLAttributes<HTMLInputElement> & {
   size?: keyof typeof sizes;
   autoComplete?: string;
   icon?: React.ReactNode;
-  otherProps?: any;
+  otherProps?: React.HTMLAttributes<HTMLInputElement>;
 };
 
 export const Input: React.FC<InputProps> = ({
@@ -66,7 +66,7 @@ export const Input: React.FC<InputProps> = ({
   const ShowPasswordInfo = () => {
     return (
       <>
-        <div onClick={(e) => setShowPassword(!showPassword)}>
+        <div onClick={() => setShowPassword(!showPassword)}>
           {showPassword ? <CloseEyeIcon /> : <OpenEyeIcon />}
         </div>
       </>

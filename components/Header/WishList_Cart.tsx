@@ -6,11 +6,8 @@ import user from "@/assets/images/user.png";
 import Image from "next/image";
 import { useHeaderContext } from "@/context/HeaderProvider";
 
-type Props = {};
-
-const WishList_Cart = (props: Props) => {
-  const { isSmallScreen, menuOpen, setMenuOpen, toggleMenu } =
-    useHeaderContext();
+const WishList_Cart = () => {
+  const { isSmallScreen, menuOpen, toggleMenu } = useHeaderContext();
   return (
     <>
       {isSmallScreen && (

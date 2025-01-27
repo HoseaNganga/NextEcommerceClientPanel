@@ -5,9 +5,7 @@ import { Input } from "../Input";
 import { SearchIcon } from "../Icons";
 import { useHeaderContext } from "@/context/HeaderProvider";
 
-type Props = {};
-
-const HeaderIcons = (props: Props) => {
+const HeaderIcons = () => {
   const { isSmallScreen } = useHeaderContext();
   return (
     <div className="flex flex-col">

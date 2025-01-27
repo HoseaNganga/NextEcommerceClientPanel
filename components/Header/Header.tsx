@@ -5,12 +5,9 @@ import logo from "@/assets/images/apple-touch-icon.png";
 import Link from "next/link";
 import HeaderIcons from "./HeaderIcons";
 import WishList_Cart from "./WishList_Cart";
-import { HeaderProvider, useHeaderContext } from "@/context/HeaderProvider";
-
-type Props = {};
+import { HeaderProvider } from "@/context/HeaderProvider";
 
 const HeaderContent = () => {
-  const { isSmallScreen, setIsSmallScreen } = useHeaderContext();
   return (
     <header className="container w-screen min-w-full sticky top-0 z-[99999] border border-b-2 ">
       <div className="bg-black w-full text-white/80 capitalize text-center text-[8px] sm:text-[10px] md:text-[12px] p-0.5 sm:p-1 md:p-2  ">
@@ -33,7 +30,7 @@ const HeaderContent = () => {
   );
 };
 
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <HeaderProvider>
       <HeaderContent />
