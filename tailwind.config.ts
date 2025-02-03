@@ -21,5 +21,7 @@ export default {
       },
     },
   },
+
   plugins: [],
+  safelist: ["slick-dots", "slick-active"],
 } satisfies Config;
