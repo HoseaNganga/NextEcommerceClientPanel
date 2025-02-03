@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Input } from "../Input";
 import {
@@ -12,10 +14,14 @@ import Image from "next/image";
 import QrCode from "@/assets/images/My_QR_Code_2-1024.jpeg";
 import GooglePlay from "@/assets/images/GooglePlay.png";
 import AppleStore from "@/assets/images/AppStore.png";
+import { FooterProvider, useFooterProvider } from "@/context/FooterProvider";
+import { faqData, modalData, termsOfUseData } from "../Constants/constants";
+import FooterModal from "../FooterModal/FooterModal";
 
-const Footer = () => {
+const FooterContent = () => {
+  const { handleClick } = useFooterProvider();
   return (
-    <footer className="bg-black flex justify-between gap-6 items-center p-4 text-white flex-wrap ">
+    <footer className="bg-black  flex justify-between gap-6 items-center p-4 text-white flex-wrap ">
       <div className="grid gap-4">
         <h3 className="capitalize text-[16px]">exclusive</h3>
         <h6 className="text-sm">Subscribe</h6>
@@ -53,18 +59,39 @@ const Footer = () => {
       </div>
       <div className="grid gap-4 mt-[-40px]">
         <h3 className="capitalize text-[16px]">quick links</h3>
-        <Link
-          href={"/privacypolicy"}
-          className="text-gray-500 text-sm capitalize"
+        <p
+          className="text-gray-500 text-sm capitalize cursor-pointer "
+          onClick={() =>
+            handleClick({
+              title: "Privacy Policy",
+              modalData: modalData?.modalData ?? "No Data Available",
+            })
+          }
         >
           privacy policy
-        </Link>
-        <Link href={"/terms"} className="text-gray-500 text-sm capitalize">
+        </p>
+        <p
+          className="text-gray-500 text-sm capitalize  cursor-pointer"
+          onClick={() =>
+            handleClick({
+              title: "Terms Of Use",
+              modalData: termsOfUseData?.modalData ?? "No Data Available",
+            })
+          }
+        >
           terms of use
-        </Link>
-        <Link href={"/faq"} className="text-gray-500 text-sm uppercase">
+        </p>
+        <p
+          className="text-gray-500 text-sm uppercase cursor-pointer"
+          onClick={() =>
+            handleClick({
+              title: "FaqData",
+              modalData: faqData?.modalData ?? "No Data Available",
+            })
+          }
+        >
           faq
-        </Link>
+        </p>
       </div>
       <div className="grid mt-4">
         <h3 className="capitalize text-[16px]">download app</h3>
@@ -92,6 +119,15 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+  );
+};
+
+const Footer = () => {
+  return (
+    <FooterProvider>
+      <FooterContent />
+      <FooterModal />
+    </FooterProvider>
   );
 };
 
