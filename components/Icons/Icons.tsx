@@ -1,8 +1,32 @@
 import { cn } from "@/utils/tailwind-marge/tailwind_marge";
+import Image from "next/image";
 import React from "react";
+import FacebookLogo from "@/assets/images/Icon-Facebook.png";
+import InstagramLogo from "@/assets/images/icon-instagram.png";
+import LinkedInLogo from "@/assets/images/Icon-Linkedin.png";
+import XLogo from "@/assets/images/Icon-Twitter.png";
 
 type SVGProps = {
   className?: string;
+};
+
+export const FacebookIcon: React.FC<SVGProps> = function () {
+  return (
+    <Image src={FacebookLogo} alt="Facebook Logo" width={20} height={20} />
+  );
+};
+export const InstagramIcon: React.FC<SVGProps> = function () {
+  return (
+    <Image src={InstagramLogo} alt="Instagram Logo" width={20} height={20} />
+  );
+};
+export const LinkedInIcon: React.FC<SVGProps> = function () {
+  return (
+    <Image src={LinkedInLogo} alt="Linked In Logo" width={20} height={20} />
+  );
+};
+export const XIcon: React.FC<SVGProps> = function () {
+  return <Image src={XLogo} alt="X Logo" width={20} height={20} />;
 };
 
 export const OpenEyeIcon: React.FC<SVGProps> = function ({ className }) {
@@ -62,6 +86,25 @@ export const SearchIcon: React.FC<SVGProps> = function ({ className }) {
         strokeLinecap="round"
         strokeLinejoin="round"
         d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+      />
+    </svg>
+  );
+};
+
+export const SendIcon: React.FC<SVGProps> = function ({ className }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={cn("w-4 h-4", className)}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21 12L3 3l7 9-7 9 18-9z"
       />
     </svg>
   );
