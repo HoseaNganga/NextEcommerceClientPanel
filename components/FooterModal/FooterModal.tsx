@@ -4,9 +4,11 @@ import { useFooterProvider } from "@/context/FooterProvider";
 import React from "react";
 import { Button } from "../Button";
 import { CloseIcon } from "../Icons";
+import ConvertToHtml from "@/utils/GenerateHtml/ConvertToHtml";
 
 const FooterModal = () => {
   const { isModalVisible, handleClose, data } = useFooterProvider();
+  const modalData = <ConvertToHtml rawContent={data?.modalData || ""} />;
 
   if (!isModalVisible) return null;
   return (
@@ -25,7 +27,7 @@ const FooterModal = () => {
         <h2 className="text-base font-semibold text-[#0D0D0D] mb-5 mt-5">
           {data?.title}
         </h2>
-        <p className="text-[#0D0D0D] md:text-base text-sm">{data?.modalData}</p>
+        {modalData}
       </div>
     </div>
   );

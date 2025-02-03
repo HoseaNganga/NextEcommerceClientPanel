@@ -93,7 +93,7 @@ const FooterContent = () => {
           faq
         </p>
       </div>
-      <div className="grid mt-4">
+      <div className="grid mt-7">
         <h3 className="capitalize text-[16px]">download app</h3>
         <p className="text-gray-500 text-sm capitalize">
           save $3 with App New User Only
@@ -111,7 +111,7 @@ const FooterContent = () => {
             <Image src={AppleStore} alt="Apple Store" width={80} height={80} />
           </div>
         </div>
-        <div className="text-white flex justify-start gap-2">
+        <div className="text-white flex justify-start gap-2 mt-4">
           <FacebookIcon />
           <InstagramIcon />
           <LinkedInIcon />
