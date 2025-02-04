@@ -1,3 +1,5 @@
+import { ProductList as ProductListType } from "@/lib/types/ProductType";
+
 interface ModalData {
   modalData: string;
 }
@@ -106,4 +108,109 @@ export const faqData: ModalData = {
       9. **Is my personal information safe?**
         - Yes, we take your privacy seriously. We use industry-standard encryption and security measures to protect your personal data. Please refer to our Privacy Policy for more information.
     `,
+};
+
+export const ProductList: ProductListType = {
+  productList: [
+    {
+      _id: "1",
+      name: "BULLMER Men Red Cotton Blend Printed Single T-shirt T Shirt For Men Update",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727720331/zrn25ekpdtf7mszsrd3r.webp",
+      oldprice: 10,
+      newprice: 5,
+      rating: 5,
+      discount: 10,
+    },
+    {
+      _id: "2",
+      name: "Gespo Solid Teal Blue Spread Collar Half Sleeve Casual Shirt",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727777838/rwrdgdp0llbx7ga2hi8p.webp",
+      oldprice: 15,
+      newprice: 10,
+      rating: 4,
+      discount: 20,
+    },
+    {
+      _id: "3",
+      name: "Popwings Casual Women Solid White Square Neck Regular Top | Short Sleeves Tops | Regular Tops | Women Tops | Tops | Latest Design Tops | Stylish Tops | Trendy Tops",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778053/jwqmjobotwfyt5fyouow.webp",
+      oldprice: 20,
+      newprice: 15,
+      rating: 3,
+      discount: 30,
+    },
+    {
+      _id: "4",
+      name: "1 Stop Fashion Women's Multicolor Printed Crepe Straight Kurta",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778206/golhehprtctxtuitg3i0.webp",
+      oldprice: 25,
+      newprice: 20,
+      rating: 2,
+      discount: 40,
+    },
+    {
+      _id: "5",
+      name: "RUPELIK Samsung Galaxy Note 10 Black Polycarbonate Magnetic, Shock-Absorbent Mirror Flip Case Cover|FLIP CPOVER| MOBILE COVER| BACK COVER| MOBILE CASE| FLIP COVE",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778403/ehbn9gu0sprfpfsg7mrs.webp",
+      oldprice: 30,
+      newprice: 25,
+      rating: 1,
+      discount: 50,
+    },
+    {
+      _id: "6",
+      name: "Apple iPhone 16 128 GB, Ultramarine",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778585/zppwhm1manh1uvcnhu6q.webp",
+      oldprice: 35,
+      newprice: 30,
+      rating: 5,
+      discount: 60,
+    },
+    {
+      _id: "7",
+      name: "TP-Link UE200 USB 2.0 to 100 Mbps Ethernet Network Adapter - Plug and Play",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778738/mfocra2okisyjbkveux3.webp",
+      oldprice: 40,
+      newprice: 35,
+      rating: 4,
+      discount: 70,
+    },
+    {
+      _id: "8",
+      name: 'CHUWI HeroBook Plus 15.6" FHD Laptop, Intel Celeron N4020 Dual Core Processor Upto 2.80GHz, 8GB RAM, 256GB SSD, Intel UHD Graphics, Windows 11,WiFi 6,Webcam,BT 5.2,HDMI Port,38Wh, 1.74kg (Iron Gray)',
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727778894/kmh5u8impdxfkys0kpym.webp",
+      oldprice: 45,
+      newprice: 40,
+      rating: 3,
+      discount: 80,
+    },
+    {
+      _id: "9",
+      name: "Tomato 1 kg",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727779031/tchv3vz5d5d6w9aw7bwh.webp",
+      oldprice: 50,
+      newprice: 45,
+      rating: 2,
+      discount: 90,
+    },
+    {
+      _id: "10",
+      name: "Mosambi 1 kg",
+      image:
+        "https://res.cloudinary.com/doiqwg8h9/image/upload/v1727779182/pkk40midde2nkde2hj8p.webp",
+      oldprice: 55,
+      newprice: 50,
+      rating: 1,
+      discount: 100,
+    },
+  ],
 };

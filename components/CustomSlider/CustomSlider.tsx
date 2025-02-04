@@ -40,13 +40,13 @@ const CustomSlider = ({ imageArr }: Props) => {
         <Button
           className="embla__prev absolute left-3 bottom-1/2"
           onClick={scrollPrev}
-          size="xs"
+          size="xxs"
           icon={<LeftArrowIcon />}
         ></Button>
         <Button
           className="embla__next absolute right-3 bottom-1/2"
           onClick={scrollNext}
-          size="xs"
+          size="xxs"
           icon={<RightArrowIcon />}
         ></Button>
       </div>

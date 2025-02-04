@@ -10,9 +10,11 @@ const variants = {
   default: "hover:bg-gray-200 text-gray-700",
   white: "bg-white  hover:bg-gray-100 text-gray-700 border-2 ",
   outline: "hover:bg-gray-100 text-gray-700 border",
+  custom: "bg-[#DB4444] text-white hover:bg-[#DB4444]",
 };
 
 const sizes = {
+  xxs: "px-0.5 py-1 text-[8px] w-10 ",
   xs: "px-2 py-2 text-sm w-20",
   sm: "px-3 py-2.5 text-sm w-24",
   md: "px-6 py-3.5 text-base w-32 ",
