@@ -5,6 +5,8 @@ import FacebookLogo from "@/assets/images/Icon-Facebook.png";
 import InstagramLogo from "@/assets/images/icon-instagram.png";
 import LinkedInLogo from "@/assets/images/Icon-Linkedin.png";
 import XLogo from "@/assets/images/Icon-Twitter.png";
+import WishlistLogo from "@/assets/icons/Fill Heart.png";
+import ViewLogo from "@/assets/icons/Fill Eye.png";
 
 type SVGProps = {
   className?: string;
@@ -29,6 +31,12 @@ export const XIcon: React.FC<SVGProps> = function () {
   return <Image src={XLogo} alt="X Logo" width={20} height={20} />;
 };
 
+export const WishListIcon: React.FC<SVGProps> = function () {
+  return <Image src={WishlistLogo} alt="WishListIcon" width={20} height={20} />;
+};
+export const ViewIcon: React.FC<SVGProps> = function () {
+  return <Image src={ViewLogo} alt="WishListIcon" width={20} height={20} />;
+};
 export const OpenEyeIcon: React.FC<SVGProps> = function ({ className }) {
   return (
     <svg
